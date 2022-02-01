@@ -15,13 +15,41 @@ console.log(createScoreboard()) */
 
 // Add a player to the score board above 
 // define the fucntion addPlayer that accepts 3 parameters 
+// add a player to the object thats already presented
+// in this case were addding JOse Valim and his score of 486373
 
-function addPlayer(objec,name,score ){
-let z = name
-    let object = {
-    z:score,
-    name:score
-}
+/*function addPlayer(object,name,score){
+    object[name]= score 
     return object
+
 }
-console.log(addPlayer({ 'Dave Thomas': 0 }, 'José Valim' , 486373))
+console.log(addPlayer({ 'Dave Thomas': 0 }, 'José Valim' , 486373,)) */
+
+
+//REMOVE PLAYER 
+
+// create a function called removePlayer which takes two parameters 
+//This function should remove the entry for the given player from 
+
+/*the board and return the board afterwards. 
+If the player was not on the board in the first place, 
+nothing should happen to the board. It should be returned as is. */
+
+/*function removePlayer(scoreboard,name){
+
+delete scoreboard[name]
+
+    return scoreboard
+}
+console.log(removePlayer({ 'Dave Thomas': 0 }, 'Dave Thomas')) */
+
+// Increase a players score 
+
+function updateScore(scoreboard,nameOfScorer,scoreToAdd){
+    //let add = scoreboard[]
+    scoreboard[nameOfScorer] = scoreboard[nameOfScorer] + scoreToAdd
+    
+    return scoreboard
+
+}
+console.log(updateScore({"Freyja Ćirić": 12771008}, "Freyja Ćirić", 10000000000000))
